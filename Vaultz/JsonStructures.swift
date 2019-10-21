@@ -51,3 +51,96 @@ struct AssetData: Codable{
     let status: Status
     let data: Data
 }
+
+// Response codables
+struct Response{
+    var result: Any
+    var error: String?
+    var id: String = "curltest"
+}
+
+/*
+ * API Json structures. These structures are used to encode and decode http responses.
+ * All these API conform to the API specs in the komodo documentation.
+*/
+
+// GetNewAddress - The `getnewaddress` method returns a new address for receiving payments.
+struct GetNewAddress: Codable{
+    var address: String
+}
+
+// GetWalletInfo - The `getwalletinfo` returns the wallet method returns an obejct containing
+// various information about the wallet state.
+struct GetWalletInfo: Codable{
+    var walletversion: Int64
+    var balance: Double
+    var unconfirmed_balance: Int64
+    var immature_balance: Double
+    var txaccount: Int
+    var keypoololdest: Int64
+    var keypoolsize: Int64
+    var paytxfee: Int64
+}
+
+// SendToAddress - The `sendtoaddress` method sends an amount to a given address. The amount is real and is rounded to the neares
+// 0.0000001
+struct SendToAddress: Codable{
+    var result: String
+    var error: String?
+    let id: String = "curltest"
+}
+
+// GetBalance - The `getbalance` method returns the server's totla available balance
+struct GetBalance: Codable{
+    var result: Double
+    var error: String?
+    let id: String = "curltest"
+}
+
+// GetTransactions - The `gettransactions` method queries detailed information about transaction `txid`. This
+// command applies only to `txid``s that are in the user's local wallet.
+struct GetTransactions: Codable{
+    var amount: Double
+    var rawconfirmations: Int
+    var confirmations: Int
+    var blockhash: String
+    var blockindex: Int
+    var blocktime: Int64
+    var expiryheight: Int64
+    var txid: String
+    var walletconflicts: [String]
+    var time: Int64
+    var timereceived: Int64
+    var  details: [TransactionDetails]
+    var hex: String
+}
+
+struct TransactionDetails: Codable{
+    var account: String
+    var address: String
+    var category: String
+    var amount: Double
+    var vout: Int
+    var size: Int
+}
+
+// GetUnconfirmedBalance - the `getunconfirmedbalance` method returns the server's total unconfirmed balance.
+struct GetUnconfirmedBalance: Codable{
+    var result: Double
+    var error: String
+    let id: String = "curltest"
+}
+
+// ValidateAddress - The `validateaddress` method returns information about the given address.
+struct ValidateAddress: Codable{
+    var istruct: Bool
+    var address: String
+    var scriptPubKey: String
+    var segid: Int64
+    var ismine: Bool
+    var iswatchonly: Bool
+    var isscript: Bool
+    var pubkey: String
+    var iscompressed: Bool
+    var account: String
+}
