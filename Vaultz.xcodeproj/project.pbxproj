@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF2997E42350F70B008F6612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2997E32350F70B008F6612 /* AppDelegate.swift */; };
+		CF2997E62350F70B008F6612 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2997E52350F70B008F6612 /* SceneDelegate.swift */; };
+		CF2997E92350F70B008F6612 /* Vaultz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF2997E72350F70B008F6612 /* Vaultz.xcdatamodeld */; };
+		CF2997EB2350F70B008F6612 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2997EA2350F70B008F6612 /* ContentView.swift */; };
+		CF2997ED2350F710008F6612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2997EC2350F710008F6612 /* Assets.xcassets */; };
+		CF2997F02350F710008F6612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2997EF2350F710008F6612 /* Preview Assets.xcassets */; };
+		CF2997F32350F710008F6612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2997F12350F710008F6612 /* LaunchScreen.storyboard */; };
+		CF2997FE2350F710008F6612 /* VaultzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2997FD2350F710008F6612 /* VaultzTests.swift */; };
+		CF2998092350F710008F6612 /* VaultzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2998082350F710008F6612 /* VaultzUITests.swift */; };
+		CF29981723513B85008F6612 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29981623513B85008F6612 /* SettingsView.swift */; };
+		CF29981923513BD0008F6612 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29981823513BD0008F6612 /* DashboardView.swift */; };
+		CF29981C23513CDC008F6612 /* CoinmaketCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29981B23513CDC008F6612 /* CoinmaketCap.swift */; };
+		CF4DC0E0235255D40013AE58 /* JsonStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4DC0DF235255D40013AE58 /* JsonStructures.swift */; };
+		CF4DC0E223525A220013AE58 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4DC0E123525A220013AE58 /* WalletView.swift */; };
+		CFBE9C4F2356C65400347510 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE9C4E2356C65400347510 /* Security.swift */; };
+		CFBE9C512356C9EE00347510 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE9C502356C9EE00347510 /* NetworkManager.swift */; };
+		CFD0C5E52358157B00969FD4 /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0C5E42358157B00969FD4 /* ServerConfiguration.swift */; };
+		CFD0C5E7235840CF00969FD4 /* NewWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0C5E6235840CF00969FD4 /* NewWalletView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF2997FA2350F710008F6612 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2997D82350F70B008F6612 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2997DF2350F70B008F6612;
+			remoteInfo = Vaultz;
+		};
+		CF2998052350F710008F6612 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2997D82350F70B008F6612 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2997DF2350F70B008F6612;
+			remoteInfo = Vaultz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF2997E02350F70B008F6612 /* Vaultz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vaultz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2997E32350F70B008F6612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF2997E52350F70B008F6612 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF2997E82350F70B008F6612 /* Vaultz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vaultz.xcdatamodel; sourceTree = "<group>"; };
+		CF2997EA2350F70B008F6612 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF2997EC2350F710008F6612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2997EF2350F710008F6612 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF2997F22350F710008F6612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF2997F42350F710008F6612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2997F92350F710008F6612 /* VaultzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2997FD2350F710008F6612 /* VaultzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultzTests.swift; sourceTree = "<group>"; };
+		CF2997FF2350F710008F6612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2998042350F710008F6612 /* VaultzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaultzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2998082350F710008F6612 /* VaultzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultzUITests.swift; sourceTree = "<group>"; };
+		CF29980A2350F710008F6612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF29981623513B85008F6612 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CF29981823513BD0008F6612 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		CF29981B23513CDC008F6612 /* CoinmaketCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinmaketCap.swift; sourceTree = "<group>"; };
+		CF4DC0DF235255D40013AE58 /* JsonStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStructures.swift; sourceTree = "<group>"; };
+		CF4DC0E123525A220013AE58 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		CFBE9C4E2356C65400347510 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		CFBE9C502356C9EE00347510 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CFD0C5E42358157B00969FD4 /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
+		CFD0C5E6235840CF00969FD4 /* NewWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2997DD2350F70B008F6612 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2997F62350F710008F6612 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2998012350F710008F6612 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2997D72350F70B008F6612 = {
+			isa = PBXGroup;
+			children = (
+				CF2997E22350F70B008F6612 /* Vaultz */,
+				CF2997FC2350F710008F6612 /* VaultzTests */,
+				CF2998072350F710008F6612 /* VaultzUITests */,
+				CF2997E12350F70B008F6612 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2997E12350F70B008F6612 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2997E02350F70B008F6612 /* Vaultz.app */,
+				CF2997F92350F710008F6612 /* VaultzTests.xctest */,
+				CF2998042350F710008F6612 /* VaultzUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2997E22350F70B008F6612 /* Vaultz */ = {
+			isa = PBXGroup;
+			children = (
+				CF2997E32350F70B008F6612 /* AppDelegate.swift */,
+				CF2997E52350F70B008F6612 /* SceneDelegate.swift */,
+				CF29981A23513C05008F6612 /* Views */,
+				CF2997EC2350F710008F6612 /* Assets.xcassets */,
+				CF2997F12350F710008F6612 /* LaunchScreen.storyboard */,
+				CF2997F42350F710008F6612 /* Info.plist */,
+				CF2997E72350F70B008F6612 /* Vaultz.xcdatamodeld */,
+				CF2997EE2350F710008F6612 /* Preview Content */,
+				CF29981B23513CDC008F6612 /* CoinmaketCap.swift */,
+				CF4DC0DF235255D40013AE58 /* JsonStructures.swift */,
+				CFBE9C4E2356C65400347510 /* Security.swift */,
+				CFBE9C502356C9EE00347510 /* NetworkManager.swift */,
+			);
+			path = Vaultz;
+			sourceTree = "<group>";
+		};
+		CF2997EE2350F710008F6612 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF2997EF2350F710008F6612 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF2997FC2350F710008F6612 /* VaultzTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2997FD2350F710008F6612 /* VaultzTests.swift */,
+				CF2997FF2350F710008F6612 /* Info.plist */,
+			);
+			path = VaultzTests;
+			sourceTree = "<group>";
+		};
+		CF2998072350F710008F6612 /* VaultzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2998082350F710008F6612 /* VaultzUITests.swift */,
+				CF29980A2350F710008F6612 /* Info.plist */,
+			);
+			path = VaultzUITests;
+			sourceTree = "<group>";
+		};
+		CF29981A23513C05008F6612 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF29981623513B85008F6612 /* SettingsView.swift */,
+				CF2997EA2350F70B008F6612 /* ContentView.swift */,
+				CF29981823513BD0008F6612 /* DashboardView.swift */,
+				CF4DC0E123525A220013AE58 /* WalletView.swift */,
+				CFD0C5E42358157B00969FD4 /* ServerConfiguration.swift */,
+				CFD0C5E6235840CF00969FD4 /* NewWalletView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2997DF2350F70B008F6612 /* Vaultz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF29980D2350F710008F6612 /* Build configuration list for PBXNativeTarget "Vaultz" */;
+			buildPhases = (
+				CF2997DC2350F70B008F6612 /* Sources */,
+				CF2997DD2350F70B008F6612 /* Frameworks */,
+				CF2997DE2350F70B008F6612 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vaultz;
+			productName = Vaultz;
+			productReference = CF2997E02350F70B008F6612 /* Vaultz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2997F82350F710008F6612 /* VaultzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2998102350F710008F6612 /* Build configuration list for PBXNativeTarget "VaultzTests" */;
+			buildPhases = (
+				CF2997F52350F710008F6612 /* Sources */,
+				CF2997F62350F710008F6612 /* Frameworks */,
+				CF2997F72350F710008F6612 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2997FB2350F710008F6612 /* PBXTargetDependency */,
+			);
+			name = VaultzTests;
+			productName = VaultzTests;
+			productReference = CF2997F92350F710008F6612 /* VaultzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF2998032350F710008F6612 /* VaultzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2998132350F710008F6612 /* Build configuration list for PBXNativeTarget "VaultzUITests" */;
+			buildPhases = (
+				CF2998002350F710008F6612 /* Sources */,
+				CF2998012350F710008F6612 /* Frameworks */,
+				CF2998022350F710008F6612 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2998062350F710008F6612 /* PBXTargetDependency */,
+			);
+			name = VaultzUITests;
+			productName = VaultzUITests;
+			productReference = CF2998042350F710008F6612 /* VaultzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2997D82350F70B008F6612 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Ashwin Balasubramanian";
+				TargetAttributes = {
+					CF2997DF2350F70B008F6612 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					CF2997F82350F710008F6612 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = CF2997DF2350F70B008F6612;
+					};
+					CF2998032350F710008F6612 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = CF2997DF2350F70B008F6612;
+					};
+				};
+			};
+			buildConfigurationList = CF2997DB2350F70B008F6612 /* Build configuration list for PBXProject "Vaultz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF2997D72350F70B008F6612;
+			productRefGroup = CF2997E12350F70B008F6612 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2997DF2350F70B008F6612 /* Vaultz */,
+				CF2997F82350F710008F6612 /* VaultzTests */,
+				CF2998032350F710008F6612 /* VaultzUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2997DE2350F70B008F6612 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2997F32350F710008F6612 /* LaunchScreen.storyboard in Resources */,
+				CF2997F02350F710008F6612 /* Preview Assets.xcassets in Resources */,
+				CF2997ED2350F710008F6612 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2997F72350F710008F6612 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2998022350F710008F6612 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2997DC2350F70B008F6612 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF29981723513B85008F6612 /* SettingsView.swift in Sources */,
+				CF29981923513BD0008F6612 /* DashboardView.swift in Sources */,
+				CF2997E42350F70B008F6612 /* AppDelegate.swift in Sources */,
+				CFD0C5E7235840CF00969FD4 /* NewWalletView.swift in Sources */,
+				CFBE9C4F2356C65400347510 /* Security.swift in Sources */,
+				CFBE9C512356C9EE00347510 /* NetworkManager.swift in Sources */,
+				CF2997E92350F70B008F6612 /* Vaultz.xcdatamodeld in Sources */,
+				CF2997EB2350F70B008F6612 /* ContentView.swift in Sources */,
+				CF4DC0E0235255D40013AE58 /* JsonStructures.swift in Sources */,
+				CF4DC0E223525A220013AE58 /* WalletView.swift in Sources */,
+				CF2997E62350F70B008F6612 /* SceneDelegate.swift in Sources */,
+				CF29981C23513CDC008F6612 /* CoinmaketCap.swift in Sources */,
+				CFD0C5E52358157B00969FD4 /* ServerConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2997F52350F710008F6612 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2997FE2350F710008F6612 /* VaultzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2998002350F710008F6612 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2998092350F710008F6612 /* VaultzUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF2997FB2350F710008F6612 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2997DF2350F70B008F6612 /* Vaultz */;
+			targetProxy = CF2997FA2350F710008F6612 /* PBXContainerItemProxy */;
+		};
+		CF2998062350F710008F6612 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2997DF2350F70B008F6612 /* Vaultz */;
+			targetProxy = CF2998052350F710008F6612 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF2997F12350F710008F6612 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2997F22350F710008F6612 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF29980B2350F710008F6612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF29980C2350F710008F6612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF29980E2350F710008F6612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Vaultz/Preview Content\"";
+				DEVELOPMENT_TEAM = WDAUF7YKSD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Vaultz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uta.komodo.Vaultz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CF29980F2350F710008F6612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Vaultz/Preview Content\"";
+				DEVELOPMENT_TEAM = WDAUF7YKSD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Vaultz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uta.komodo.Vaultz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CF2998112350F710008F6612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VaultzTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uta.komodo.VaultzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vaultz.app/Vaultz";
+			};
+			name = Debug;
+		};
+		CF2998122350F710008F6612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VaultzTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uta.komodo.VaultzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vaultz.app/Vaultz";
+			};
+			name = Release;
+		};
+		CF2998142350F710008F6612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VaultzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uta.komodo.VaultzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vaultz;
+			};
+			name = Debug;
+		};
+		CF2998152350F710008F6612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VaultzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uta.komodo.VaultzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vaultz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2997DB2350F70B008F6612 /* Build configuration list for PBXProject "Vaultz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF29980B2350F710008F6612 /* Debug */,
+				CF29980C2350F710008F6612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF29980D2350F710008F6612 /* Build configuration list for PBXNativeTarget "Vaultz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF29980E2350F710008F6612 /* Debug */,
+				CF29980F2350F710008F6612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2998102350F710008F6612 /* Build configuration list for PBXNativeTarget "VaultzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2998112350F710008F6612 /* Debug */,
+				CF2998122350F710008F6612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2998132350F710008F6612 /* Build configuration list for PBXNativeTarget "VaultzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2998142350F710008F6612 /* Debug */,
+				CF2998152350F710008F6612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF2997E72350F70B008F6612 /* Vaultz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF2997E82350F70B008F6612 /* Vaultz.xcdatamodel */,
+			);
+			currentVersion = CF2997E82350F70B008F6612 /* Vaultz.xcdatamodel */;
+			path = Vaultz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF2997D82350F70B008F6612 /* Project object */;
+}
