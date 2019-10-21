@@ -53,11 +53,11 @@ struct AssetData: Codable{
 }
 
 // Request Codables
-struct Request: Codable{
+struct Request<U: Codable>: Codable{
     let jsonrpc: Float32 = 1.0
     let id: String = "curltest"
     var method: String
-    var params: [[String: String]] = []
+    var params: [[String: U]] = []
 }
 
 // Response codables
