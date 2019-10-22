@@ -9,9 +9,14 @@
 import SwiftUI
 
 struct NewWalletView: View {
+    @State var showNewAddress: Bool = false
     var body: some View {
         VStack{
-            Button(action: {}){Text("Create a new wallet")}
+            Button(action: {self.showNewAddress = true}){
+                Text("Create a new wallet")
+            }.sheet(isPresented: self.$showNewAddress){
+                NewAddress()
+            }
             Text("OR")
             Button(action: {}){Text("Add an existing wallet")}
         }

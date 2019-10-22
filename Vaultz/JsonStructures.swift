@@ -74,7 +74,9 @@ struct Response{
 
 // GetNewAddress - The `getnewaddress` method returns a new address for receiving payments.
 struct GetNewAddress: Codable{
-    var address: String
+    var address: String?
+    var error: String?
+    var id: String = "curltest"
 }
 
 // GetWalletInfo - The `getwalletinfo` returns the wallet method returns an obejct containing

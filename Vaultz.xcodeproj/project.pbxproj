@@ -21,6 +21,8 @@
 		CF29981C23513CDC008F6612 /* CoinmaketCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29981B23513CDC008F6612 /* CoinmaketCap.swift */; };
 		CF4DC0E0235255D40013AE58 /* JsonStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4DC0DF235255D40013AE58 /* JsonStructures.swift */; };
 		CF4DC0E223525A220013AE58 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4DC0E123525A220013AE58 /* WalletView.swift */; };
+		CF55DE2F235E203200E5A091 /* Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF55DE2E235E203200E5A091 /* Curl.swift */; };
+		CF55DE31235E919F00E5A091 /* NewAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF55DE30235E919F00E5A091 /* NewAddress.swift */; };
 		CFBE9C4F2356C65400347510 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE9C4E2356C65400347510 /* Security.swift */; };
 		CFBE9C512356C9EE00347510 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE9C502356C9EE00347510 /* NetworkManager.swift */; };
 		CFD0C5E52358157B00969FD4 /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0C5E42358157B00969FD4 /* ServerConfiguration.swift */; };
@@ -65,6 +67,9 @@
 		CF29981B23513CDC008F6612 /* CoinmaketCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinmaketCap.swift; sourceTree = "<group>"; };
 		CF4DC0DF235255D40013AE58 /* JsonStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStructures.swift; sourceTree = "<group>"; };
 		CF4DC0E123525A220013AE58 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		CF55DE2E235E203200E5A091 /* Curl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curl.swift; sourceTree = "<group>"; };
+		CF55DE30235E919F00E5A091 /* NewAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddress.swift; sourceTree = "<group>"; };
+		CF55DE32235E9DA400E5A091 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CFBE9C4E2356C65400347510 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		CFBE9C502356C9EE00347510 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CFD0C5E42358157B00969FD4 /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
@@ -131,6 +136,8 @@
 				CF4DC0DF235255D40013AE58 /* JsonStructures.swift */,
 				CFBE9C4E2356C65400347510 /* Security.swift */,
 				CFBE9C502356C9EE00347510 /* NetworkManager.swift */,
+				CF55DE2E235E203200E5A091 /* Curl.swift */,
+				CF55DE32235E9DA400E5A091 /* MyPlayground.playground */,
 			);
 			path = Vaultz;
 			sourceTree = "<group>";
@@ -170,6 +177,7 @@
 				CF4DC0E123525A220013AE58 /* WalletView.swift */,
 				CFD0C5E42358157B00969FD4 /* ServerConfiguration.swift */,
 				CFD0C5E6235840CF00969FD4 /* NewWalletView.swift */,
+				CF55DE30235E919F00E5A091 /* NewAddress.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +315,7 @@
 			files = (
 				CF29981723513B85008F6612 /* SettingsView.swift in Sources */,
 				CF29981923513BD0008F6612 /* DashboardView.swift in Sources */,
+				CF55DE31235E919F00E5A091 /* NewAddress.swift in Sources */,
 				CF2997E42350F70B008F6612 /* AppDelegate.swift in Sources */,
 				CFD0C5E7235840CF00969FD4 /* NewWalletView.swift in Sources */,
 				CFBE9C4F2356C65400347510 /* Security.swift in Sources */,
@@ -318,6 +327,7 @@
 				CF2997E62350F70B008F6612 /* SceneDelegate.swift in Sources */,
 				CF29981C23513CDC008F6612 /* CoinmaketCap.swift in Sources */,
 				CFD0C5E52358157B00969FD4 /* ServerConfiguration.swift in Sources */,
+				CF55DE2F235E203200E5A091 /* Curl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
