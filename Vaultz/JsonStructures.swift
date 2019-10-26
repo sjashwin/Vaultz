@@ -95,7 +95,7 @@ struct GetWalletInfo: Codable{
 // SendToAddress - The `sendtoaddress` method sends an amount to a given address. The amount is real and is rounded to the neares
 // 0.0000001
 struct SendToAddress: Codable{
-    var result: String
+    var result: String?
     var error: String?
     let id: String = "curltest"
 }
