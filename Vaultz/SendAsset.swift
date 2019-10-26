@@ -12,10 +12,15 @@ class Send{
     
     var connection: Curl
     var send: SendToAddress
-    init(config: Configuration){
+    var METHOD: String = "sendtoaddress"
+    var request: URLRequest
+    init<U: Codable>(config: Configuration, params: [U]){
         self.connection = Curl(config: config)
         self.send = SendToAddress()
-        self.connection.request(&self.send)
+        self.request = self.connection.getHttpRequest(
+            method: METHOD,
+            params: params)
+        self.connection.request(request: self.request, &self.send)
     }
     
     func getResult()->String?{

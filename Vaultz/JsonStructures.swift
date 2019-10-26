@@ -57,7 +57,7 @@ struct Request<U: Codable>: Codable{
     let jsonrpc: Float32 = 1.0
     let id: String = "curltest"
     var method: String
-    var params: [[String: U]] = []
+    var params: [U]
 }
 
 // Response codables

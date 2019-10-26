@@ -33,7 +33,7 @@ class Curl{
         return resourcelocator.url
     }
     
-    func getHttpRequest<U: Codable>(method: String, params: [[String:U]]) -> URLRequest{
+    func getHttpRequest<U: Codable>(method: String, params: [U]) -> URLRequest{
         var request = URLRequest(url: generateURL()!)
         request.httpMethod = self.METHOD
         request.httpBody = encodeRequest(method: method, params: params)!
@@ -41,7 +41,7 @@ class Curl{
         return request
     }
     
-    func encodeRequest<U: Codable>(method: String, params: [[String: U]]) -> Data?{
+    func encodeRequest<U: Codable>(method: String, params: [U]) -> Data?{
         let encoder = JSONEncoder()
         let request: Request = Request(method: method, params: params)
         do{
@@ -65,8 +65,8 @@ class Curl{
         }
     }
     
-    func createSession(url: URL) -> URLSessionTask{
-        return URLSession.shared.dataTask(with: url){
+    func createSession(request: URLRequest) -> URLSessionTask{
+        return URLSession.shared.dataTask(with: request){
             self.manageCurlResponse(data: $0, response: $1, error: $2)
         }
     }
@@ -85,8 +85,8 @@ class Curl{
         self.responseData = data
     }
     
-    func request<T: Codable>(_ object:inout T){
-        let session = self.createSession(url: generateURL()!)
+    func request<T: Codable>(request: URLRequest, _ object:inout T){
+        let session = self.createSession(request: request)
         // Check for race condition
         session.resume()
         decodeResponse(data: self.responseData, &object)
