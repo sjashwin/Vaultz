@@ -82,14 +82,14 @@ struct GetNewAddress: Codable{
 // GetWalletInfo - The `getwalletinfo` returns the wallet method returns an obejct containing
 // various information about the wallet state.
 struct GetWalletInfo: Codable{
-    var walletversion: Int64
-    var balance: Double
-    var unconfirmed_balance: Int64
-    var immature_balance: Double
-    var txaccount: Int
-    var keypoololdest: Int64
-    var keypoolsize: Int64
-    var paytxfee: Int64
+    var walletversion: Int64?
+    var balance: Double?
+    var unconfirmed_balance: Int64?
+    var immature_balance: Double?
+    var txaccount: Int?
+    var keypoololdest: Int64?
+    var keypoolsize: Int64?
+    var paytxfee: Int64?
 }
 
 // SendToAddress - The `sendtoaddress` method sends an amount to a given address. The amount is real and is rounded to the neares

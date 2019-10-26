@@ -33,10 +33,10 @@ class Curl{
         return resourcelocator.url
     }
     
-    func getHttpRequest<U: Codable>(method: String, params: [U]) -> URLRequest{
+    func getHttpRequest<U: Codable>(method: Methods, params: [U]) -> URLRequest{
         var request = URLRequest(url: generateURL()!)
         request.httpMethod = self.METHOD
-        request.httpBody = encodeRequest(method: method, params: params)!
+        request.httpBody = encodeRequest(method: method.descrption, params: params)!
         request.setValue("text/plain", forHTTPHeaderField: "Content-Type")
         return request
     }

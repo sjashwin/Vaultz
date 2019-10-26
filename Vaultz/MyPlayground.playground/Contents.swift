@@ -108,3 +108,9 @@ let connection = Curl(
 var newAddress: GetNewAddress = GetNewAddress()
 connection.request(&newAddress)
 print(newAddress)
+
+enum Methods: String{
+    case getwalletinfo = "getwalletinfo"
+    case error = "error"
+}
+print(Methods.getwalletinfo.rawValue)
