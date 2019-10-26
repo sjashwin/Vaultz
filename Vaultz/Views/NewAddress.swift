@@ -36,12 +36,8 @@ struct NewAddress: View {
 }
 
 func getAddress()->String?{
-    let connection = Curl(
-        hostname: "127.0.0.1",
-        username: "user",
-        password: "pass",
-        port: 7771
-    )
+    let config: Configuration = Configuration(hostname: "127.0.0.1", port: 7771, username: "user", password: "pass")
+    let connection = Curl(config: config)
     var newAddress: GetNewAddress = GetNewAddress()
     connection.request(&newAddress)
     return newAddress.address
@@ -60,7 +56,6 @@ struct Success: View{
         VStack{
             Text("Congratulations! we have created a new address for you.")
             Text(address)
-            Button("Done", action: {})
         }
     }
 }

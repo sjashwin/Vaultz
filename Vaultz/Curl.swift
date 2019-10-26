@@ -16,11 +16,11 @@ class Curl{
     var response: URLResponse?
     var responseData: Data?
     var httpResponseError: Error?
-    init(hostname: String, username: String, password: String, port: Int){
-        self.hostname = hostname
-        self.username = username
-        self.password = password
-        self.port = port
+    init(config: Configuration){
+        self.hostname = config.hostname
+        self.username = config.username
+        self.password = config.password
+        self.port = config.port
     }
     
     func generateURL() -> URL?{

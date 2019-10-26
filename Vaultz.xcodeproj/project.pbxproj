@@ -23,6 +23,8 @@
 		CF4DC0E223525A220013AE58 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4DC0E123525A220013AE58 /* WalletView.swift */; };
 		CF55DE2F235E203200E5A091 /* Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF55DE2E235E203200E5A091 /* Curl.swift */; };
 		CF55DE31235E919F00E5A091 /* NewAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF55DE30235E919F00E5A091 /* NewAddress.swift */; };
+		CFA32C912364BA7C00561F29 /* SendAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA32C902364BA7C00561F29 /* SendAsset.swift */; };
+		CFA32C932364BB3000561F29 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA32C922364BB3000561F29 /* Configuration.swift */; };
 		CFBE9C4F2356C65400347510 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE9C4E2356C65400347510 /* Security.swift */; };
 		CFBE9C512356C9EE00347510 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE9C502356C9EE00347510 /* NetworkManager.swift */; };
 		CFD0C5E52358157B00969FD4 /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0C5E42358157B00969FD4 /* ServerConfiguration.swift */; };
@@ -70,6 +72,8 @@
 		CF55DE2E235E203200E5A091 /* Curl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curl.swift; sourceTree = "<group>"; };
 		CF55DE30235E919F00E5A091 /* NewAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddress.swift; sourceTree = "<group>"; };
 		CF55DE32235E9DA400E5A091 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CFA32C902364BA7C00561F29 /* SendAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAsset.swift; sourceTree = "<group>"; };
+		CFA32C922364BB3000561F29 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		CFBE9C4E2356C65400347510 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		CFBE9C502356C9EE00347510 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CFD0C5E42358157B00969FD4 /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				CF2997E72350F70B008F6612 /* Vaultz.xcdatamodeld */,
 				CF2997EE2350F710008F6612 /* Preview Content */,
 				CF29981B23513CDC008F6612 /* CoinmaketCap.swift */,
+				CFA32C922364BB3000561F29 /* Configuration.swift */,
+				CFA32C902364BA7C00561F29 /* SendAsset.swift */,
 				CF4DC0DF235255D40013AE58 /* JsonStructures.swift */,
 				CFBE9C4E2356C65400347510 /* Security.swift */,
 				CFBE9C502356C9EE00347510 /* NetworkManager.swift */,
@@ -317,11 +323,13 @@
 				CF29981923513BD0008F6612 /* DashboardView.swift in Sources */,
 				CF55DE31235E919F00E5A091 /* NewAddress.swift in Sources */,
 				CF2997E42350F70B008F6612 /* AppDelegate.swift in Sources */,
+				CFA32C912364BA7C00561F29 /* SendAsset.swift in Sources */,
 				CFD0C5E7235840CF00969FD4 /* NewWalletView.swift in Sources */,
 				CFBE9C4F2356C65400347510 /* Security.swift in Sources */,
 				CFBE9C512356C9EE00347510 /* NetworkManager.swift in Sources */,
 				CF2997E92350F70B008F6612 /* Vaultz.xcdatamodeld in Sources */,
 				CF2997EB2350F70B008F6612 /* ContentView.swift in Sources */,
+				CFA32C932364BB3000561F29 /* Configuration.swift in Sources */,
 				CF4DC0E0235255D40013AE58 /* JsonStructures.swift in Sources */,
 				CF4DC0E223525A220013AE58 /* WalletView.swift in Sources */,
 				CF2997E62350F70B008F6612 /* SceneDelegate.swift in Sources */,
