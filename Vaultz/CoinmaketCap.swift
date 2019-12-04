@@ -16,11 +16,13 @@ class CoinmarketCap{
     var data: Data?
     var response: AssetData?
     var quoteUSD: Double
+    var quoteCur: String?
     var semaphore: DispatchSemaphore
     private let API_KEY: String
-    init(){
+    init(usd Double, quoteCur String){
         self.API_KEY = "fb635747-af48-4185-b125-8d889257ab20"
-        self.quoteUSD = 0.00
+        self.quoteUSD = usd
+        self.quoteCur = quoteCur
         self.semaphore = DispatchSemaphore(value: 0)
         self.connect().resume()
         _ = self.semaphore.wait(timeout: .distantFuture)
